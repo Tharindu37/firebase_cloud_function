@@ -1,0 +1,71 @@
+[debug] [2024-10-01T11:19:06.750Z] ----------------------------------------------------------------------
+[debug] [2024-10-01T11:19:06.754Z] Command:       C:\Program Files\nodejs\node.exe E:\Programming Code\firebase_cloud_function\node_modules\firebase-tools\lib\bin\firebase.js functions:shell
+[debug] [2024-10-01T11:19:06.754Z] CLI Version:   13.20.2
+[debug] [2024-10-01T11:19:06.754Z] Platform:      win32
+[debug] [2024-10-01T11:19:06.755Z] Node Version:  v20.15.0
+[debug] [2024-10-01T11:19:06.755Z] Time:          Tue Oct 01 2024 16:49:06 GMT+0530 (India Standard Time)
+[debug] [2024-10-01T11:19:06.755Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-01T11:19:06.814Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-01T11:19:06.814Z] > authorizing via signed-in user (tharindut520@gmail.com)
+[debug] [2024-10-01T11:19:06.814Z] [iam] checking project my-project-1-666a4 for permissions ["firebase.projects.get"]
+[debug] [2024-10-01T11:19:06.815Z] Checked if tokens are valid: true, expires at: 1727784740384
+[debug] [2024-10-01T11:19:06.815Z] Checked if tokens are valid: true, expires at: 1727784740384
+[debug] [2024-10-01T11:19:06.816Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1-666a4:testIamPermissions [none]
+[debug] [2024-10-01T11:19:06.816Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1-666a4:testIamPermissions x-goog-quota-user=projects/my-project-1-666a4
+[debug] [2024-10-01T11:19:06.816Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1-666a4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-01T11:19:08.832Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1-666a4:testIamPermissions 200
+[debug] [2024-10-01T11:19:08.832Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-project-1-666a4:testIamPermissions {"permissions":["firebase.projects.get"]}
+[debug] [2024-10-01T11:19:08.833Z] >>> [apiv2][query] GET http://127.0.0.1:4400/emulators [none]
+[debug] [2024-10-01T11:19:08.842Z] <<< [apiv2][status] GET http://127.0.0.1:4400/emulators 200
+[debug] [2024-10-01T11:19:08.842Z] <<< [apiv2][body] GET http://127.0.0.1:4400/emulators {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":4776},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"firestore":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"name":"firestore","host":"127.0.0.1","port":8080,"pid":40312,"reservedPorts":[9150],"webSocketHost":"127.0.0.1","webSocketPort":9150}}
+[debug] [2024-10-01T11:19:08.842Z] Running emulators:  {"hub":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"name":"hub","host":"127.0.0.1","port":4400},"ui":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"name":"ui","host":"127.0.0.1","port":4000,"pid":4776},"logging":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"name":"logging","host":"127.0.0.1","port":4500},"firestore":{"listen":[{"address":"127.0.0.1","family":"IPv4","port":8080}],"name":"firestore","host":"127.0.0.1","port":8080,"pid":40312,"reservedPorts":[9150],"webSocketHost":"127.0.0.1","webSocketPort":9150}}
+[debug] [2024-10-01T11:19:08.845Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2024-10-01T11:19:08.847Z] defaultcredentials: writing to file C:\Users\ASUS\AppData\Roaming\firebase\tharindut520_gmail_com_application_default_credentials.json
+[debug] [2024-10-01T11:19:08.848Z] DEBUG: Setting GAC to C:\Users\ASUS\AppData\Roaming\firebase\tharindut520_gmail_com_application_default_credentials.json
+[debug] [2024-10-01T11:19:08.849Z] Checked if tokens are valid: true, expires at: 1727784740384
+[debug] [2024-10-01T11:19:08.849Z] Checked if tokens are valid: true, expires at: 1727784740384
+[debug] [2024-10-01T11:19:08.849Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-project-1-666a4/adminSdkConfig [none]
+[debug] [2024-10-01T11:19:10.465Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-project-1-666a4/adminSdkConfig 200
+[debug] [2024-10-01T11:19:10.465Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-project-1-666a4/adminSdkConfig {"projectId":"my-project-1-666a4","databaseURL":"https://my-project-1-666a4-default-rtdb.firebaseio.com","storageBucket":"my-project-1-666a4.appspot.com","locationId":"us-central"}
+[debug] [2024-10-01T11:19:10.475Z] [functions] Watching "E:\Programming Code\firebase_cloud_function\functions" for Cloud Functions...
+[debug] [2024-10-01T11:19:10.478Z] Validating nodejs source
+[warn] !  functions: package.json indicates an outdated version of firebase-functions. Please upgrade using npm install --save firebase-functions@latest in your functions directory. 
+[warn] !  functions: Please note that there will be breaking changes when you upgrade. 
+[debug] [2024-10-01T11:19:13.314Z] > [functions] package.json contents: {
+  "name": "functions",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "dev": "npm run build && firebase emulators:start --inspect-functions --only functions",
+    "serve": "npm run build && firebase emulators:start --only functions",
+    "shell": "npm run build && firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+    "firebase-admin": "^12.1.0",
+    "firebase-functions": "^5.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.25.4",
+    "firebase-functions-test": "^3.1.0",
+    "typescript": "^4.9.0"
+  },
+  "private": true
+}
+[debug] [2024-10-01T11:19:13.314Z] Building nodejs source
+[debug] [2024-10-01T11:19:13.315Z] Failed to find version of module node: reached end of search path E:\Programming Code\firebase_cloud_function\functions\node_modules
+[warn] !  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
+[debug] [2024-10-01T11:19:13.317Z] Could not find functions.yaml. Must use http discovery
+[debug] [2024-10-01T11:19:13.325Z] Found firebase-functions binary at 'E:\Programming Code\firebase_cloud_function\functions\node_modules\.bin\firebase-functions'
